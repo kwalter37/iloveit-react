@@ -50,7 +50,7 @@ class App extends Component {
 
   componentWillMount() {
     $.ajax({
-      url: "http://iloveit.herokuapp.com/products"
+      url: "https://iloveit.herokuapp.com/products"
     }).then((result) => {
       this.setState({products: result});
     }, function(reason) {
